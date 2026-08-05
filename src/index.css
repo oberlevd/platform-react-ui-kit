@@ -1,0 +1,94 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-border: var(--border);
+
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-alfa-red: #ef3124;
+  --color-alfa-red-active: #d91d0b;
+  --color-alfa-indigo: #0b1f35;
+
+  --color-alfa-text: var(--alfa-text);
+  --color-alfa-bg-control: var(--alfa-bg-control);
+  --color-alfa-bg-control-hover: var(--alfa-bg-control-hover);
+  --color-alfa-border-control: var(--alfa-border-control);
+
+  --color-orange-500: #f97316;
+  --color-orange-600: #ea580c;
+  --color-orange-900: #7c2d12;
+
+  --color-green-600: #16a34a;
+  --color-green-900: #14532d;
+
+  --color-blue-600: #2563eb;
+  --color-blue-900: #1e3a8a;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #0b1f35;
+  --border: rgba(11, 31, 53, 0.12);
+
+  --popover: #ffffff;
+  --popover-foreground: #0b1f35;
+
+  --muted: #f2f3f5;
+  --muted-foreground: #64748b;
+
+  --accent: #f2f3f5;
+  --accent-foreground: #0b1f35;
+
+  --input: #f2f3f5;
+  --ring: #ef3124;
+
+  --alfa-text: #0b1f35;
+  --alfa-bg-control: #f2f3f5;
+  --alfa-bg-control-hover: #e6e8eb;
+  --alfa-border-control: rgba(11, 31, 53, 0.12);
+}
+
+.theme-alfa-on-color {
+  --background: #0b1f35;
+  --foreground: #ffffff;
+  --border: rgba(255, 255, 255, 0.2);
+
+  --popover: #0b1f35;
+  --popover-foreground: #ffffff;
+
+  --muted: rgba(255, 255, 255, 0.1);
+  --muted-foreground: rgba(255, 255, 255, 0.6);
+
+  --accent: rgba(255, 255, 255, 0.1);
+  --accent-foreground: #ffffff;
+
+  --input: rgba(255, 255, 255, 0.1);
+  --ring: #ffffff;
+
+  --alfa-text: #ffffff;
+  --alfa-bg-control: rgba(255, 255, 255, 0.1);
+  --alfa-bg-control-hover: rgba(255, 255, 255, 0.2);
+  --alfa-border-control: rgba(255, 255, 255, 0.2);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
